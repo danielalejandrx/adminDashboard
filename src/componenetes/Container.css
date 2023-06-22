@@ -1,7 +1,7 @@
 .container{
     width: calc(100% - 100px );
     padding: 20px;
-    
+    overflow: hidden;
 
 }
 
@@ -95,63 +95,62 @@
 
 }
 
-.topContainer .profileContainer .profileImage img{
+.profileContainer .profileImage img {
     object-fit: cover;
     width: 100%;
-    height :100%;
-}
-
-.topContainer .profileContainer .prfileName {
+    height: 100%;
+  }
+  
+  .profileContainer .profileName {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 14px;
-}
-
-.topContainer .profileContainer .menuChevron{
+  }
+  
+  .profileContainer .menuChevron {
     cursor: pointer;
     font-size: 12px;
     margin: 0px 10px;
-}
-
-.topContainer .profileContainer .menuContainer{
+  }
+  
+  .profileContainer .menuChevron:hover {
+    transition: transform 0.5s ease;
+  }
+.profileContainer .menuContainer {
     position: absolute;
     right: 10px;
     top: 50px;
     background: #19162c;
-    border-radius: 0.5em;
+    border-radius: 10px;
     width: 180px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     z-index: 1;
     transform: translateX(300px);
-    transition: transform 0.3;
+    transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+  }
+
+.profileContainer .menuContainer:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #19162c;
+  top: -5px;
+  right: 14px;
+  transform: rotate(45deg);
 }
 
-.topContainer .profileContainer .menuContainer::after{
-    position: absolute;
-    content:"";
-    width: 10px;
-    height: 10px;
-    background: #19162c;
-    top: -5px;
-    right: 15px;
+.profileContainer .menuContainer ul {
+  width: 100%;
+  height: 100%;
 }
 
-.topContainer .profileContainer .menuContainer ul{
-    width:100%;
-    height: 100%;
-}
-
-.topContainer .profileContainer .menuContainer ul li{
-    list-style: none;
-    margin: 5px 0;
-    width: 100%;
-    padding:10px 20px;
-    cursor: pointer;
-    color: #757380;
-    text-align: left;
-}
-.topContainer .profileContainer .menuContainer ul li:hover{
-    background: #121026;
-    color: #f1f1f1;
-    transition: 0.3s;
+.profileContainer .menuContainer ul li {
+  list-style: none;
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #757380;
+  text-align: left;
 }
