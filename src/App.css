@@ -1,0 +1,7 @@
+.app{
+    width: 100%;
+    height: auto;
+    background: #29236b;
+    overflow: hideen;
+    display: flex;
+  }
