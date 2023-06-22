@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FaBell, FaChevronDown } from "react-icons/fa";
-import perfil from "../img/perfil.png";
 
 function TopContainers() {
 
