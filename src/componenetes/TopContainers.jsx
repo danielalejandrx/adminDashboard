@@ -7,6 +7,7 @@ function TopContainer() {
   useEffect(() => {
     const mouseTarget = document.getElementById("menuChevron");
     const menuContainer = document.getElementById("menuContainer");
+    
     mouseTarget.addEventListener("mouseenter", () => {
       mouseTarget.style.transform = "rotate(180deg)";
       menuContainer.style.transform = "translateX(0px)";
